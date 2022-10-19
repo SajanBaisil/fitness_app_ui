@@ -1,8 +1,10 @@
-import 'package:fitness_app/screens/title.dart';
+
 import 'package:fitness_app/training/training_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+
+import '../presentation/title_view.dart';
 
 class Training extends StatefulWidget {
   const Training({super.key});

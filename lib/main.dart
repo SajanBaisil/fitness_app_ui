@@ -1,9 +1,11 @@
 
+
 import 'package:fitness_app/home/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MediaQuery(data: MediaQueryData(), child: MyApp())
+    );
 }
 
 class MyApp extends StatelessWidget {
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MediaQuery(data: MediaQueryData(), child: MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen()
+      home:HomeScreen(),
     ));
   }
 }

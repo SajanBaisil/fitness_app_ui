@@ -1,17 +1,18 @@
+import 'package:fitness_app/presentation/appbar.dart';
 
-import 'package:fitness_app/screens/appbar.dart';
-import 'package:fitness_app/screens/body_measurement.dart';
-import 'package:fitness_app/screens/diet_container.dart';
-import 'package:fitness_app/screens/meals.dart';
-import 'package:fitness_app/screens/title.dart';
-import 'package:fitness_app/screens/water.dart';
-import 'package:fitness_app/screens/water_glass.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';import 'package:flutter/src/widgets/container.dart';
 
 
 import 'package:flutter/src/widgets/framework.dart';
+
+import '../presentation/body_measurement.dart';
+import '../presentation/diet_container.dart';
+import '../presentation/meals_view.dart';
+import '../presentation/title_view.dart';
+import '../presentation/water.dart';
+import '../presentation/water_glass.dart';
 
 class BodyPart extends StatefulWidget {
   const BodyPart({super.key});

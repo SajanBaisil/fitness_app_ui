@@ -1,15 +1,10 @@
-import 'package:fitness_app/pages/bodyPart.dart';
 import 'package:fitness_app/pages/training.dart';
-import 'package:fitness_app/screens/appbar.dart';
-import 'package:fitness_app/screens/body_measurement.dart';
-import 'package:fitness_app/screens/diet_container.dart';
-import 'package:fitness_app/screens/meals.dart';
-import 'package:fitness_app/screens/title.dart';
-import 'package:fitness_app/screens/water.dart';
-import 'package:fitness_app/screens/water_glass.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+
+import '../pages/body_part.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -27,10 +22,10 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   final List list = [
-    BodyPart(),
-    Training(),
-    BodyPart(),
-    Training(),
+    const BodyPart(),
+    const Training(),
+    const BodyPart(),
+    const Training(),
   ];
 
   @override
@@ -49,27 +44,60 @@ class _HomeScreenState extends State<HomeScreen> {
             ])),
         child: IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.add,
               size: 25,
               color: Colors.white,
             )),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: selectedindex,
           onTap: changeindex,
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.blue,
-          items: const [
+          items: [
             BottomNavigationBarItem(
-                icon: Icon(Icons.library_books_outlined), label: ''),
+                icon: Image.asset(
+                  'assets/fittness/tab_1.png',
+                  height: 40,
+                ),
+                activeIcon: Image.asset(
+                  'assets/fittness/tab_1s.png',
+                  height: 40,
+                ),
+                label: ''),
             BottomNavigationBarItem(
-                icon: Icon(Icons.directions_run_outlined), label: ''),
+                icon: Image.asset(
+                  'assets/fittness/tab_2.png',
+                  height: 40,
+                ),
+                activeIcon: Image.asset(
+                  'assets/fittness/tab_2s.png',
+                  height: 40,
+                ),
+                label: ''),
             BottomNavigationBarItem(
-                icon: Icon(Icons.apple_outlined), label: ''),
+                icon: Image.asset(
+                  'assets/fittness/tab_3.png',
+                  height: 40,
+                ),
+                activeIcon: Image.asset(
+                  'assets/fittness/tab_3s.png',
+                  height: 40,
+                ),
+                label: ''),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person_outlined), label: ''),
+                icon: Image.asset(
+                  'assets/fittness/tab_4.png',
+                  height: 40,
+                ),
+                activeIcon: Image.asset(
+                  'assets/fittness/tab_4s.png',
+                  height: 40,
+                ),
+                label: ''),
           ]),
     );
   }
