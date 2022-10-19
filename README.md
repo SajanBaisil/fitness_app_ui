@@ -1,3 +1,5 @@
+![mydiary](https://user-images.githubusercontent.com/108852458/196790034-49a432dd-8e19-4cf1-9038-5db058c3de09.jpg)
+![training_screen dart](https://user-images.githubusercontent.com/108852458/196790063-11cca6df-83b0-4921-8b9c-c39b69efe977.jpg)
 
 
 
